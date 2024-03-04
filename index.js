@@ -30,7 +30,7 @@ var questionsArr = [
         ]
       },
     {
-        question: 'If you were looking at Iguazu Falls, on what continent would you be?',
+        question: 'On what continent is  Iguazu Falls?',
         answer: 'South America',
         options: [
           'Asia',
