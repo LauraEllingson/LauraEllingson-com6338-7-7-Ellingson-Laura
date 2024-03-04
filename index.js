@@ -1,11 +1,10 @@
 var questionsArr = [
     {
-      question: '
-      How many bones are in the human body?',
+      question: 'How many bones are in the human body?',
       answer: '206',
       options: [
-        '355',
         '200',
+        '355',
         '206',
         '500',
       ]
@@ -14,39 +13,39 @@ var questionsArr = [
         question: 'What Galaxy do we live in?',
         answer: 'The Milky Way',
         options: [
-          'Samsung Galaxy',
-          'Comet Galaxy',
           'The Milky Way',
           'Andromeda',
+          'Cigar',
+          'Apple',
         ]
       },
     {
-        question: 'What is the largest Ocean on Earth?',
-        answer: 'The Pacific Ocean',
+        question: 'What is the largest ocean on earth?',
+        answer: 'Pacific',
         options: [
-          'The Atlantic Ocean',
-          'The Arctic Ocean ',
-          'The Indian Ocean',
-          'The Pacific Ocean',
+          'Atlantic',
+          'Pacific',
+          'Indian',
+          'Arctic',
         ]
       },
     {
-        question: 'In what year did World War II end?',
-        answer: '1945',
+        question: 'If you were looking at Iguazu Falls, on what continent would you be?',
+        answer: 'South America',
         options: [
-          '1945',
-          '1929',
-          '1942',
-          '1917',
+          'Asia',
+          'North America',
+          'Africa',
+          'South America',
         ]
       },
     {
-        question: 'What is the deepest part of the ocean ?',
+        question: 'Where is the deepest part of the ocean?',
         answer: 'The Mariana Trench',
         options: [
-          'South Sandwich Trench',
-          'The Mariana Trench',
           'Mollay Hole',
+          'Russian Trench',
+          'Mariana Trench',
           'Indian Ocean Trench',
         ]
       },
@@ -74,48 +73,48 @@ var questionsArr = [
 // Add ids
   btn.setAttribute("id", "start-quiz")
 
-
+  
 
   // Text Content
   btn.textContent = "Start Quiz"
-
+  
 
 
 function setupQuiz() {
-
+  
   quizEl.innerHTML = ""
-
+ 
   // Append elements
   quizEl.appendChild(btn)
-
+  
   // Load previous score if there is one
   var score = localStorage.getItem('previous-score')
   if (score) {
     scoreEl.textContent = "Previous Score: " + score
     quizEl.appendChild(scoreEl)
   }
-
+ 
 }
 
 btn.onclick = function() {
   startQuiz()
-
+    
 }
 
 function startQuiz() {
   // Append elements
   quizEl.innerHTML = ""
-
-
+  
+  
   quizEl.appendChild(questionP)
   quizEl.appendChild(answerDiv)
   quizEl.appendChild(timerP)
-
+  
   var currentQuesEl = questionsArr[currentQues]
   questionP.textContent = currentQuesEl.question
-
+  
   answerDiv.innerHTML = ""
-
+  
   for (var i = 0; i < currentQuesEl.options.length; i++) {
     var answerBtn = document.createElement("button")
     answerBtn.textContent = currentQuesEl.options[i]
@@ -141,8 +140,8 @@ function checkAns(e) {
   }
 }
 
-
-
+    
+    
 
 
   function displayResults() {
@@ -159,7 +158,7 @@ function checkAns(e) {
     quizEl.appendChild(btn)
   }
 
-
+ 
 
   function timerCount() {
     timeLeft = 30
@@ -177,10 +176,10 @@ function checkAns(e) {
           displayResults()
         }
       }
-
-
+      
+      
     }, 1000)   
-
+    
   }
 
   setupQuiz()
