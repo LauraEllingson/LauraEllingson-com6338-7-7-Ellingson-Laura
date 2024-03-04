@@ -11,9 +11,9 @@ var questionsArr = [
     },
     {
         question: 'What Galaxy do we live in?',
-        answer: 'The Milky Way',
+        answer: 'Milky Way',
         options: [
-          'The Milky Way',
+          'Milky Way',
           'Andromeda',
           'Cigar',
           'Apple',
@@ -45,7 +45,7 @@ var questionsArr = [
         options: [
           'Mollay Hole',
           'Russian Trench',
-          'Mariana Trench',
+          'The Mariana Trench',
           'Indian Ocean Trench',
         ]
       },
