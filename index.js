@@ -41,11 +41,11 @@ var questionsArr = [
       },
     {
         question: 'Where is the deepest part of the ocean?',
-        answer: 'The Mariana Trench',
+        answer: 'Mariana Trench',
         options: [
           'Mollay Hole',
           'Russian Trench',
-          'The Mariana Trench',
+          'Mariana Trench',
           'Indian Ocean Trench',
         ]
       },
